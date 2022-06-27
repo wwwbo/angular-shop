@@ -1,0 +1,13 @@
+<mat-toolbar class="header" color="accent">
+    <span>
+      <a routerLink="/product">{{title}}</a>
+    </span>
+    <span class="spacer"></span>
+    <button mat-stroked-button>
+      <a routerLink="/product/shop">Goto Shop</a>
+    </button>
+</mat-toolbar>
+
+<mat-card class="content">
+  <router-outlet></router-outlet>
+</mat-card>

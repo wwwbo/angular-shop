@@ -1,0 +1,74 @@
+.detail-product {
+
+  .head-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    img {
+      width: 450px;
+      border-radius: 10px;
+    }
+  }
+
+  .content {
+    margin-top: 3em;
+    
+    h3, h4{
+      margin-top: -1em;
+    }
+
+    h4, span {
+      font-weight: 500;
+      color: #ff4080ee;
+    }
+
+    p {
+      margin-top: 1em;
+      color: gray;
+      font-style: italic;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: end;
+    margin-top: 2em;
+  }
+
+  :host ::ng-deep .mat-dialog-container {
+    border-radius: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .head-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    img {
+      width: 282px;
+      border-radius: 10px;
+    }
+  }
+
+  .content {
+    margin-top: 3em;
+    
+    h3, h4{
+      margin-top: -1em;
+    }
+
+    h4 {
+      font-weight: 500;
+      color: #ff4081;
+    }
+  }
+
+  :host ::ng-deep .mat-dialog-container {
+    border-radius: 12px !important;
+  }
+}
+
+

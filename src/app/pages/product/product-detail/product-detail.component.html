@@ -1,0 +1,17 @@
+<div class="detail-product">
+  <div class="head-img">
+    <img src="{{dataProduct.thumbnail}}">
+  </div>
+
+  <div class="content">
+    <h2>{{dataProduct.title}}</h2>
+    <h4>{{dataProduct.brand}}</h4>
+    <h3>$ {{dataProduct.price}}</h3>
+    <span>{{dataProduct.category}}</span>
+    <p>{{dataProduct.description}}</p>
+  </div>
+
+  <div class="footer">
+    <button mat-raised-button color="accent" (click)="closeDialog()">Cancel</button>
+  </div>
+</div>
