@@ -8,10 +8,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Requirement
 
-# Angular Material
+### Angular Material
 
-    Installing [Angular Material](https://material.angular.io/) `ng add @angular/material`
+Installing [Angular Material](https://material.angular.io/) `ng add @angular/material`
 
-# API Dummy
+### API Dummy
 
-    Copy this in your project `https://dummyjson.com/products`
+Copy this in your project `https://dummyjson.com/products`
