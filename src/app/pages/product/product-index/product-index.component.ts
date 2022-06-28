@@ -7,6 +7,7 @@ import { takeUntil } from 'rxjs/operators';
 import { DataProduct, Products } from '../product.model';
 import { ProductService } from '../product.service';
 import { ProductDetailComponent } from '../product-detail/product-detail.component';
+import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-product-index',
@@ -25,14 +26,17 @@ export class ProductIndexComponent implements OnInit, OnDestroy {
 
   constructor(
     private productService: ProductService,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private uiService: UiService
   ) { }
 
   ngOnInit(): void {
+    this.uiService.showLoading();
     this.productService.getProduct().pipe(
       takeUntil(this.onDestroy$)
     ).subscribe(
       (data: DataProduct) => {
+        this.uiService.hideLoading();
         this.dataProduct = data;
         this.dataSource.data = data.products;
         this.dataSource.paginator = this.paginator;
