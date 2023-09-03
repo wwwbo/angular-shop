@@ -8,3 +8,9 @@
   height: 100%;
   z-index: 999;
 }
+
+::ng-deep .my-custom-dialog-class {
+  mat-dialog-container {
+    border-radius: 0.8rem !important;
+  }
+}

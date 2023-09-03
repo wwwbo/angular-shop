@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class UiService {
 
-  loading$ = new BehaviorSubject<boolean>(false);
+  loading$ = new BehaviorSubject<boolean>(true);
 
   constructor() { }
 

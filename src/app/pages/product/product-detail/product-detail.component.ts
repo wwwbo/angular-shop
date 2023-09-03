@@ -22,7 +22,6 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     if (this.openProductDetail) {
       this.dataProduct = this.openProductDetail;
-      console.log(this.dataProduct.brand);
     }
   }
 

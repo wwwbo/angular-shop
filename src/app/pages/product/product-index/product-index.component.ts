@@ -46,6 +46,8 @@ export class ProductIndexComponent implements OnInit, OnDestroy {
 
   openProductDetail(element: Products) {
     this.dialog.open(ProductDetailComponent, {
+      autoFocus: false,
+      panelClass: 'my-custom-dialog-class',
       width: '500px',
       data: element
     });
